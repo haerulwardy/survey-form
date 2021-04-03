@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- style -->
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- FONT -->
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+	<title>Freecodecamp - Build survey form</title>
+</head>
+<body>
+
+	<div id="main">
+		
+		<!-- survey form -->
+		<section class="survey">
+			<!-- title -->
+			<div class="title-form">
+				<h1 id="title">Selection for the favorite superhero</h1>
+				<p id="description">Who's' your favorite superhero?</p>
+			</div>
+			<!-- end title -->
+			<!-- form -->
+			<form action="" id="survey-form">
+				<!-- input div -->
+				<div class="input-div">
+					<!-- name -->
+					<div class="name-input">
+						<label for="name">Name</label>
+						<input type="text" id="name" placeholder="Input your name here .." required>
+					</div>
+					<!-- email -->
+					<div class="email-input">
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="Input your email here .." required>
+					</div>
+					<!-- superhero -->
+					<div class="superhero-input">
+						<label for="superhero">Superhero name</label>
+						<input type="text" id="superhero" placeholder="Input your favorite superhero name her ..">
+					</div>
+					<!-- superhero code -->
+					<div class="code-input">
+						<label for="code">Superhero code</label>
+						<input type="number" id="number" placeholder="Input your favorite superhero code her .." min="6" max="8">
+					</div>
+					<!-- Team -->
+					<div class="team-input">
+						<label for="team">What group does he belong to?</label>
+						<select name="team" id="team">
+							<option value="avengers">Avengers</option>
+							<option value="fantastic-four">Fantastic Four</option>
+							<option value="x-men">X-men</option>
+							<option value="inhuman">Inhuman</option>
+						</select>
+					</div>
+				</div>
+				<!-- non input div -->
+				<div class="non-input-div">
+					<!-- title non-input div -->
+
+					<!-- radio -->
+					<div class="born">
+						<h2>What year was he born?</h2>
+						<div class="born-container">
+							<div class="born-col-1">
+								<input type="radio" name="born" id="1996" value="1996">
+								<label for="1996">1996</label>
+								<input type="radio" name="born" id="1997" value="1997">
+								<label for="1997">1997</label>
+							</div>
+							<div class="born-col-2">
+								<input type="radio" name="born" id="1998" value="1998">
+								<label for="1998">1998</label>
+								<input type="radio" name="born" id="1999" value="1999">
+								<label for="1999">1999</label>
+							</div>
+						</div>
+					</div>
+					<!-- checkbox -->
+					<div class="weapon">
+						<h2>What's the weapon?</h2>
+						<div class="weapon-container">
+							<div class="weapon-col">
+								<input type="checkbox" name="Mjolnir" id="mjolnir" value="Mjolnir">
+								<label for="mjolnir">Mjolnir</label>
+								<input type="checkbox" name="shield" id="shield" value="Shield">
+								<label for="shield">Shield</label>
+								<input type="checkbox" name="cosmic-cube" id="cosmic-cube" value="Cosmic Cube">
+								<label for="cosmic-cube">Cosmic Cube</label>
+							</div>
+						</div>
+					</div>
+					<!-- submit -->
+					<button id="submit" type="submit">Submit request</button>
+
+				</div>
+			</form>
+			<!-- end form -->
+		</section>
+		<!-- end survey form -->
+		
+	</div>
+	
+</body>
+</html>
